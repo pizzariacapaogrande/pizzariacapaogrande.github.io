@@ -7,33 +7,56 @@
     <title>Pizzaria Capão Grande</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="w-full h-full container mx-auto bg-green-500">
-    <header class="w-full h-20 flex justify-center items-center">
-        <a class="w-40 h-auto ml-20" href=""><span>Logo</span></a>
-        <nav class="w-full h-auto">
-            <ul class="flex space-x-10 justify-center">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/cardapio.html">Cardápio</a></li>
-                <li><a href="/historia.html">História</a></li>
+<body class="w-full h-screen flex mx-auto">
+
+    <aside class="w-1/4 h-full hidden sm:flex flex-col py-4 px-8">
+
+        <a class="w-60 h-auto" href="#home">
+            <img src="/assets/images/logo.png" alt="logo" srcset="">
+        </a>
+        <nav class="w-full h-full flex flex-col items-center justify-center">
+            <ul class="flex flex-col space-y-6 justify-center">
+                <li><button id="btn-home">Home</button></li>
+                <li><button id="btn-cardapio">Cardápio</button></li>
+                <li><button id="btn-historia">História</button></li>
             </ul>
         </nav>
-        <div class="w-40 h-auto mr-20">
-            <ul class="flex space-x-4">
-                <li><span>instagram</span></li>
-            </ul>
+        <a class="w-full h-12 mb-12 flex justify-center items-center" href="">
+            <span>instagram</span>
+        </a>
+        <div class="w-full h-8 flex">
+            <p class="text-sm px-2 border-r border-gray-900">© pizzaria capão grande</p>
+            <a class="flex items-center" href="https://www.megaterio.com.br" target="_blank">
+                <p class="ml-2 text-xs text-right">Megaterio</p>
+            </a>
         </div>
-    </header>
-    <main class="w-full h-screen flex flex-col justify-center items-center m-auto">
-        <p class="text-white font-light text-xl text-center">Em Breve</p>
-        <h1 class="mt-10 text-green-900 text-5xl font-bold text-center">Pizzaria Capão Grande</h1>
-        <p class="mt-10 text-white font-light text-lg text-center">site em construção</p>
+
+    </aside>
+
+    <main class="w-full h-full flex flex-col">
+        
+        <section id="home" class="w-full h-full flex justify-start relative">
+            <h2>Home</h2>
+            <img class="w-3/4 h-auto absolute right-0 bottom-0" src="/assets/images/arvores.png" alt="arvores">
+        </section>
+        <section id="cardapio" class="w-full h-full hidden flex">
+            <article class="w-1/2 h-full flex flex-col">
+                <div class="flex items-center">
+                    <img class="w-28 h-auto" src="/assets/images/image1.png" alt="">
+                    <h2 class="w-full text-2xl font-bold uppercase traking-wider text-center">pizzas</h2>
+                    <img class="w-28 h-auto" src="/assets/images/image2.png" alt="">
+                </div>
+            </article>
+            <article class="w-1/2 h-full flex flex-col">
+
+            </article>
+        </section>
+        <section id="historia" class="w-full h-full hidden">
+            <h2>História</h2>
+        </section>
+ 
     </main>
-    <footer class="w-full h-auto border-t border-green-900 text-white">
-        <div class="w-full h-full px-10 py-4 flex">
-            <a class="w-40 h-auto ml-20" href=""><span>Logo</span></a>
-            <p class="px-2 text-sm border-r border-green-900">© pizzaria capão grande</p>
-            <a href=""><p class="px-2 text-sm">Megaterio</p></a>
-        </div>
-    </footer>
+
+    <script src="/assets/main.js"></script>
 </body>
 </html>
