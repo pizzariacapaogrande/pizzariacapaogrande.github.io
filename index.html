@@ -13,13 +13,13 @@
         
         <!-- nav mobile -->
         <nav class="w-full h-auto flex sm:hidden">
-            <button id="btn-toggle" class="">
+            <button id="btn-toggle" class="p-2">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/>
                     <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
                 </svg>
             </button>
             <div class="w-full invisible"></div>
-            <a class="w-1/5 h-full sm:mr-4 self-end flex justify-end items-center text-gray-700" href="">
+            <a class="w-1/5 h-full p-2 sm:mr-4 self-end flex justify-end items-center text-gray-700" href="https://www.instagram.com/pizzadocapaooriginal">
                 <svg class="w-6 h-6 hover:text-red-700" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
                     <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
                     <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
@@ -30,9 +30,9 @@
         <!-- toggle mobile -->
         <div id="menu-mobile" class="w-full h-full mt-8 hidden bg-white">
             <ul class="flex justify-center items-center">
-                <li class="px-4 border-r border-gray-500"><button id="btn-home">Home</button></li>
-                <li class="px-4 border-r border-gray-500"><button id="btn-cardapio">Cardápio</button></li>
-                <li class="px-4"><button id="btn-historia">História</button></li>
+                <li class="px-4 border-r border-gray-500"><button id="btn-mobhome">Home</button></li>
+                <li class="px-4 border-r border-gray-500"><button id="btn-mobcardapio">Cardápio</button></li>
+                <li class="px-4"><button id="btn-mobhistoria">História</button></li>
             </ul>
         </div>
 
@@ -45,7 +45,7 @@
                         <li><button id="btn-historia">História</button></li>
                     </ul>
                 </nav>
-                <a class="w-1/5 h-full mr-4 self-end flex justify-end items-center text-gray-700" href="">
+                <a class="w-1/5 h-full mr-4 self-end flex justify-end items-center text-gray-700" href="https://www.instagram.com/pizzadocapaooriginal" target="_blank">
                     <svg class="w-6 h-6 hover:text-red-700" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
                         <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
                         <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
@@ -56,29 +56,9 @@
         
             
         <section id="home" class="w-full h-full mt-20 flex flex-col justify-center items-center">
-            <article class="w-full h-full flex justify-center items-center">
-                <p class="w-full h-full sm:hidden absolute top-1/2 text-md text-light font-normal traking-widest text-gray-700 text-center">desde 1992</p>
-                <div class="w-full h-auto sm:ml-32 sm:mt-16 hidden flex flex-col">
-                    <h3 class="text-green-700 text-xl sm:text-3xl font-medium sm:font-bold capitalize traking-wider">da horta para o mundo</h3>
-                    <p class="w-full sm:w-2/3 mt-4 text-md text-gray-500 text-justify font-normal traking-wide">
-                        aqui vai o texto para descrver a tela inical
-                        aqui vai o texto para descrver a tela inical
-                        aqui vai o texto para descrver a tela inical
-                        aqui vai o texto para descrver a tela inical
-                        aqui vai o texto para descrver a tela inical
-                        aqui vai o texto para descrver a tela inical
-                        aqui vai o texto para descrver a tela inical
-                    </p>
-                    <p class="w-full sm:w-1/3 mt-2 text-md text-gray-500 text-justify font-normal traking-wide">
-                        aqui vai o texto para descrver a tela inical
-                        aqui vai o texto para descrver a tela inical
-                        aqui vai o texto para descrver a tela inical
-                        aqui vai o texto para descrver a tela inical
-                        aqui vai o texto para descrver a tela inical
-                        aqui vai o texto para descrver a tela inical
-                        aqui vai o texto para descrver a tela inical
-                    </p>
-                </div>
+            <article class="w-full h-full flex flex-col justify-center items-center">
+                <img class="w-2/3  sm:w-1/4 h-auto sm:mt-20" src="/assets/images/logo.png" alt="logo">
+                <p class="w-full h-full mt-2 sm:hidden text-md text-light font-normal traking-widest text-gray-700 text-center">desde 1992</p>
             </article>
             <footer class="w-auto h-auto flex justify-start items-center absolute left-2 sm:left-12 bottom-2 sm:bottom-6">
                 <p class="text-xs sm:text-sm px-2 border-r border-gray-900">© pizzaria capão grande</p>
@@ -86,26 +66,96 @@
                     <p class="ml-2 text-xs text-right">Megaterio</p>
                 </a>
             </footer>
-            <img class="w-2/3 sm:w-1/5 h-auto absolute top-60 z-0" src="/assets/images/logo.png" alt="logo">
             <img class="w-full sm:w-2/3 h-auto absolute right-0 bottom-6 sm:bottom-0 z-1 " src="/assets/images/arvores.png" alt="arvores">
         </section>
         
-        <section id="cardapio" class="w-full h-full hidden flex">
-            <article class="w-1/2 h-full flex flex-col">
-                <div class="flex items-center">
-                    <div class="w-3/4">
-                        <div class="flex justify-center items-center">
-                            <img class="w-28 h-auto" src="/assets/images/image1.png" alt="">
-                            <h2 class="w-full text-2xl font-bold uppercase traking-wider text-center">pizzas</h2>
-                        </div>
-                        <h3 class="text-xl text-green-700 font-bold capitalize traking-wide text-left">pizza integral do capão</h3>
-                    </div>
-                    <aside class="w-1/4 h-auto flex justify-start"><img src="/assets/images/image2.png" alt=""></aside>
+        <section id="cardapio" class="w-full h-full sm:mt-6 sm:mt-12 hidden flex">
+
+            <aside class="w-1/3 h-full px-8 hidden sm:flex flex-col border-r border-gray-700">
+                <div class="flex justify-center items-center">
+                    <img class="w-1/4" src="/assets/images/image1.png" alt="">
+                    <h2 class="w-full text-2xl text-green-700 font-bold capitalize traking-wide text-center">da horta para o mundo</h2>
                 </div>
-            </article>
-            <article class="w-1/2 h-full flex flex-col">
-                
-            </article>
+                <p class="mt-10 text-md text-gray-700 font-normal traking-wider text-justify">
+                    Tudo começou em clima de família, lá em 1992, em volta da mesa, no quintal de casa.
+                    Os amigos foram chegando, o número de visital foi crescendo, e, naturalmente, quando percebemos,
+                    estávamos redebendo turistas e todos que vinham atrás do sabor único da nossa pizza. </br>
+                    </br>
+                    Os ingredientes são selecionados, sempre frescos e preparados por nós, o mel é colhido de nosso apiário,
+                    tudo com muito amor e carinho em meio a nateureza viva da Chapada Diamantina.</br>
+                    </br>
+                    A lenha utilizada é toda de reflorestamento e manatemos um viviveiro de mudas nativas, afirmado nosso
+                    compromisso com a natureza.</br>
+                    </br>
+                    Saboreiem com prazer!
+                </p>
+            </aside>
+
+            <div class="w-full sm:w-2/3 h-full flex flex-col">
+                <article class="w-full h-auto mt-10 sm:mt-0 flex flex-col sm:flex-row">
+                    <div class="w-full sm:w-1/2 h-full px-2 sm:px-8 flex flex-col">
+                            <div class="w-full h-auto flex justify-center items-center">
+                                <h3 class="w-2/3 text-xl text-green-700 font-bold capitalize traking-wide text-left">pizza integral do capão</h3>
+                                <img class="w-1/3 ml-4" src="/assets/images/image2.png" alt="">
+                            </div>
+                            <p class="mt-2 text-md text-gray-700 font-normal traking-wider text-justify">
+                                Feita a partir de uma fina crocante massa integral, 
+                                depois recebe um delicioso molho de tomate produzido pela casa.
+                                A cenoura da um sabor único à pziza, que se confunde quando misturado ao bom queijo
+                                mozzarella.</br>
+                                </br>
+                                É finalizada com o "molho verde" e finas rodelas de tomate fresco que dão o charme
+                                final à pizza.
+                            </p>
+                    </div>
+                    <div class="w-full sm:w-1/2 h-full mt-6 sm:mt-0 px-2 sm:px-8 flex flex-col">
+                        <div class="w-full h-auto flex justify-center items-center">
+                            <h3 class="w-2/3 text-xl text-green-700 font-bold capitalize traking-wide text-left">pizza integral de banana</h3>
+                            <img class="w-1/5 ml-4" src="assets/images/pizzariaAtivo 13pizzaria.png" alt="">
+                            <img class="w-1/5 ml-4" src="assets/images/pizzariaAtivo 15pizzaria.png" alt="">
+                        </div>
+                        <p class="mt-2 text-md text-gray-700 font-normal traking-wider text-justify">
+                            O molho de banana com mel e canela é posto sob a massa integral, recebendo queijo
+                            mozzarella e finalizado com uma mistura de castanha de caju, linhaça, gergelim
+                            e semente de girassol</br>
+                        </p>
+                    </div>
+                </article>
+                <article class="w-full h-auto mt-6 sm:mt-0 px-2 sm:px-8">
+                    <h2 class="w-full mt-6 text-lg text-green-700 font-bold uppercase traking-wide text-left">tamanhos</h2>
+                    <div class="w-full h-full flex flex-col sm:flex-row justify-center items-center">
+                        <ul class="w-full h-auto mt-6 flex flex-col items-stetch">
+                            <li class="w-full h-auto flex">
+                                <p class="w-auto sm:w-20 font-semibold text-lg traking-wide capitalize">pequena</p>
+                                <p class="w-auto ml-2 font-light italic text-normal">(1 pessoas)</p>
+                                <div class="w-1/4 invisible"></div>
+                                <p class="w-auto self-end text-right font-medium italic text-normal">R$ 30,00</p>
+                            </li>
+                            <li class="w-full h-auto flex">
+                                <p class="w-auto sm:w-20 font-semibold text-lg traking-wide capitalize">média</p>
+                                <p class="w-auto ml-2 font-light italic text-normal">(2 pessoas)</p>
+                                <div class="w-1/4 invisible"></div>
+                                <p class="w-auto self-end text-right font-medium italic text-normal">R$ 45,00</p>
+                            </li>
+                            <li class="w-full h-auto flex">
+                                <p class="w-auto sm:w-20 font-semibold text-lg traking-wide capitalize">grande</p>
+                                <p class="w-auto ml-2 font-light italic text-normal">(3 pessoas)</p>
+                                <div class="w-1/4 invisible"></div>
+                                <p class="w-auto self-end text-right font-medium italic text-normal">R$ 60,00</p>
+                            </li>
+                            <li class="w-full h-auto flex">
+                                <p class="w-auto sm:w-20 font-semibold text-lg traking-wide capitalize">família</p>
+                                <p class="w-auto ml-2 font-light italic text-normal">(4 pessoas)</p>
+                                <div class="w-1/4 invisible"></div>
+                                <p class="w-auto self-end text-right font-medium italic text-normal">R$ 75,00</p>
+                            </li>
+                        </ul>
+                        <p class="w-full sm:w-1/2 mt-6 sm:mt-0 font-semibold text-lg text-left sm:text-center traking-wide">
+                            Temos opção vegana. Consulte-nos.
+                        </p>
+                    </div>
+                </article>
+            </div>
         </section>
         
         <section id="historia" class="w-full h-full hidden">
