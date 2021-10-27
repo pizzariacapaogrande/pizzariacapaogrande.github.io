@@ -40,3 +40,23 @@
     }); 
 
 })();
+
+/**
+ * toggle menu
+ */
+
+(function () {
+    const btnMobile = document.querySelector('#btn-toggle');
+    const meuMobile = document.querySelector('#menu-mobile');
+
+    btnHome.addEventListener('click', function() {
+        
+        for (const el of pages) {  
+            if (el.classList.contains('hidden') === false) { el.classList.toggle('hidden') }
+        };
+        
+        home.classList.toggle('hidden');
+    });
+
+
+})();
