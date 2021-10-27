@@ -10,6 +10,7 @@
 <body class="w-full h-full flex">
     <div class="w-full h-full flex flex-col px-6 py-4">
 
+        
         <!-- nav mobile -->
         <nav class="w-full h-auto flex sm:hidden">
             <button id="btn-toggle" class="">
@@ -25,12 +26,16 @@
                 </svg>
             </a>
         </nav>
-
+        
         <!-- toggle mobile -->
-        <div id="menu-mobile" class="w-screen h-screen hidden bg-green-500">
-
+        <div id="menu-mobile" class="w-full h-full mt-8 hidden bg-white">
+            <ul class="flex justify-center items-center">
+                <li class="px-4 border-r border-gray-500"><button id="btn-home">Home</button></li>
+                <li class="px-4 border-r border-gray-500"><button id="btn-cardapio">Cardápio</button></li>
+                <li class="px-4"><button id="btn-historia">História</button></li>
+            </ul>
         </div>
-    
+
         <header class="w-full h-full hidden pb-4 sm:flex">
             <div class="w-full h-full flex items-center">
                 <nav class="w-full h-full ml-12 flex items-center justify-start">
@@ -52,7 +57,7 @@
             
         <section id="home" class="w-full h-full mt-20 flex flex-col justify-center items-center">
             <article class="w-full h-full flex justify-center items-center">
-                <p class="w-full h-full sm:hidden mt-80 text-md text-light font-normal traking-widest text-green-700 text-center">desde 1992</p>
+                <p class="w-full h-full sm:hidden absolute top-1/2 text-md text-light font-normal traking-widest text-gray-700 text-center">desde 1992</p>
                 <div class="w-full h-auto sm:ml-32 sm:mt-16 hidden flex flex-col">
                     <h3 class="text-green-700 text-xl sm:text-3xl font-medium sm:font-bold capitalize traking-wider">da horta para o mundo</h3>
                     <p class="w-full sm:w-2/3 mt-4 text-md text-gray-500 text-justify font-normal traking-wide">
