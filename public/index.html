@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzaria Capão Grande</title>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/tailwind.css">
 </head>
-<body class="w-full h-full flex">
+<body class="w-full h-full flex" style="background-image: url(/assets/images/backgound.jpg)">
     <div class="w-full h-full flex flex-col px-6 py-4">
 
         
@@ -28,7 +31,7 @@
         </nav>
         
         <!-- toggle mobile -->
-        <div id="menu-mobile" class="w-full h-full mt-8 hidden bg-white">
+        <div id="menu-mobile" class="w-full h-full mt-8 hidden bg-white bg-opacity-0">
             <ul class="flex justify-center items-center">
                 <li class="px-4 border-r border-gray-500"><button id="btn-mobhome">Home</button></li>
                 <li class="px-4 border-r border-gray-500"><button id="btn-mobcardapio">Cardápio</button></li>
@@ -40,9 +43,9 @@
             <div class="w-full h-full flex items-center">
                 <nav class="w-full h-full ml-12 flex items-center justify-start">
                     <ul class="flex space-x-20 justify-center items-center">
-                        <li><button id="btn-home">Home</button></li>
-                        <li><button id="btn-cardapio">Cardápio</button></li>
-                        <li><button id="btn-historia">História</button></li>
+                        <li><button id="btn-home" class="title-nav">Home</button></li>
+                        <li><button id="btn-cardapio" class="title-nav">Cardápio</button></li>
+                        <li><button id="btn-historia" class="title-nav">História</button></li>
                     </ul>
                 </nav>
                 <a class="w-1/5 h-full mr-4 self-end flex justify-end items-center text-gray-700" href="https://www.instagram.com/pizzadocapaooriginal" target="_blank">
@@ -57,7 +60,7 @@
             
         <section id="home" class="w-full h-full mt-20 flex flex-col justify-center items-center">
             <article class="w-full h-full flex flex-col justify-center items-center">
-                <img class="w-2/3  sm:w-1/4 h-auto sm:mt-20" src="/assets/images/logo.png" alt="logo">
+                <img class="w-2/3 sm:w-1/4 h-auto mt-32 sm:mt-20" src="./assets/images/logo.png" alt="logo">
                 <p class="w-full h-full mt-2 sm:hidden text-md text-light font-normal traking-widest text-gray-700 text-center">desde 1992</p>
             </article>
             <footer class="w-auto h-auto flex justify-start items-center absolute left-2 sm:left-12 bottom-2 sm:bottom-6">
@@ -66,14 +69,14 @@
                     <p class="ml-2 text-xs text-right">Megaterio</p>
                 </a>
             </footer>
-            <img class="w-full sm:w-2/3 h-auto absolute right-0 bottom-6 sm:bottom-0 z-1 " src="/assets/images/arvores.png" alt="arvores">
+            <img class="w-full sm:w-2/3 h-auto absolute right-0 bottom-6 sm:bottom-0 z-1 " src=".//assets/images/arvores.png" alt="arvores">
         </section>
         
         <section id="cardapio" class="w-full h-full sm:mt-6 sm:mt-12 hidden flex">
 
             <aside class="w-1/3 h-full px-8 hidden sm:flex flex-col border-r border-gray-700">
                 <div class="flex justify-center items-center">
-                    <img class="w-1/4" src="/assets/images/image1.png" alt="">
+                    <img class="w-1/4" src="./assets/images/image1.png" alt="">
                     <h2 class="w-full text-2xl text-green-700 font-bold capitalize traking-wide text-center">da horta para o mundo</h2>
                 </div>
                 <p class="mt-10 text-md text-gray-700 font-normal traking-wider text-justify">
@@ -96,7 +99,7 @@
                     <div class="w-full sm:w-1/2 h-full px-2 sm:px-8 flex flex-col">
                             <div class="w-full h-auto flex justify-center items-center">
                                 <h3 class="w-2/3 text-xl text-green-700 font-bold capitalize traking-wide text-left">pizza integral do capão</h3>
-                                <img class="w-1/3 ml-4" src="/assets/images/image2.png" alt="">
+                                <img class="w-1/3 ml-4" src="./assets/images/image2.png" alt="">
                             </div>
                             <p class="mt-2 text-md text-gray-700 font-normal traking-wider text-justify">
                                 Feita a partir de uma fina crocante massa integral, 
@@ -111,8 +114,8 @@
                     <div class="w-full sm:w-1/2 h-full mt-6 sm:mt-0 px-2 sm:px-8 flex flex-col">
                         <div class="w-full h-auto flex justify-center items-center">
                             <h3 class="w-2/3 text-xl text-green-700 font-bold capitalize traking-wide text-left">pizza integral de banana</h3>
-                            <img class="w-1/5 ml-4" src="assets/images/pizzariaAtivo 13pizzaria.png" alt="">
-                            <img class="w-1/5 ml-4" src="assets/images/pizzariaAtivo 15pizzaria.png" alt="">
+                            <img class="w-1/5 ml-4" src="./assets/images/pizzariaAtivo 13pizzaria.png" alt="">
+                            <img class="w-1/5 ml-4" src="./assets/images/pizzariaAtivo 15pizzaria.png" alt="">
                         </div>
                         <p class="mt-2 text-md text-gray-700 font-normal traking-wider text-justify">
                             O molho de banana com mel e canela é posto sob a massa integral, recebendo queijo
@@ -164,7 +167,6 @@
             
         
     </div>
-
-    <script src="/assets/main.js"></script>
+    <script src="./assets/js/bundle.js"></script>
 </body>
 </html>

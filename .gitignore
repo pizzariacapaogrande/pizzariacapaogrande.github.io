@@ -1,0 +1,12 @@
+#FOLDERS
+node_modules
+src
+
+# FILES
+postcss.config.js
+tailwind.config.js
+webpack.config.js
+
+# EXTENCTIONS
+*.json
+
