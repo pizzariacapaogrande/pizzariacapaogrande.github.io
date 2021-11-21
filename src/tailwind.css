@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+
+body {
+    @apply bg-no-repeat bg-auto sm:bg-cover font-roboto text-sm
+}
+
+title-nav {
+    @apply font-roboto text-base
+}
+
+
+@tailwind utilities;
