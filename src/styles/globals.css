@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html, body{
+        @apply h-full w-full
+    }
+    h1 {
+        @apply text-5xl 2xl:text-7xl font-bold tracking-wide
+    }
+    h2 {
+        @apply text-4xl 2xl:text-5xl font-medium tracking-wide
+    }
+    h3 {
+        @apply text-xl tracking-wide
+    }
+    p {
+        @apply text-base font-light 2xl:text-2xl tracking-wide
+    }
+    a {
+        @apply text-base 2xl:text-2xl tracking-wide
+    }
+    span {
+        @apply text-base font-light 2xl:text-2xl tracking-wide
+    }
+    button {
+        @apply text-base 2xl:text-xl
+    }
+    ion-icon{
+        @apply text-3xl
+    }
+}
+
+@layer components{
+    #__next {
+        @apply w-full h-full
+    }
+    .site {
+        @apply w-full h-full relative
+    }
+    .nav-wrapper{
+        @apply w-full h-40 py-2 sm:py-4 2xl:py-8 fixed top-0 z-50
+        bg-white bg-opacity-30 font-normal tracking-wide
+        backdrop-blur-lg drop-shadow-md rounded-b-sm
+    }
+    .nav-mobile{
+        @apply w-full h-full
+        flex justify-start items-center sm:hidden
+    }
+    .nav-desk{
+        @apply w-full h-full
+        hidden sm:flex justify-start items-center
+    }
+    .pizzaria{
+        @apply w-full h-full
+        flex flex-col justify-start items-center
+        bg-purple-600
+    }
+    .cardapio{
+        @apply w-full h-full
+        flex flex-col justify-start items-center
+        bg-yellow-600
+    }
+
+}

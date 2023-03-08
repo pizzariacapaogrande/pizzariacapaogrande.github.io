@@ -1,18 +1,9 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: [
-    './public/**/*.html',
-     './public/**/*.js',
-     './src/**/*.css',
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {
-      fontFamily: {
-        'roboto': ['"Roboto Slab"', 'serif'],
-      }
-    },
-  },
-  variants: {
     extend: {},
   },
   plugins: [],
