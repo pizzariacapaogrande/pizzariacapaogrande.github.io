@@ -19,7 +19,7 @@
         @apply text-base font-light 2xl:text-2xl tracking-wide
     }
     a {
-        @apply text-base 2xl:text-2xl tracking-wide
+        @apply text-base tracking-wide
     }
     span {
         @apply text-base font-light 2xl:text-2xl tracking-wide
@@ -28,7 +28,8 @@
         @apply text-base 2xl:text-xl
     }
     ion-icon{
-        @apply text-3xl
+        @apply text-2xl font-semibold
+        text-amber-900 hover:text-red-700
     }
 }
 
@@ -36,31 +37,70 @@
     #__next {
         @apply w-full h-full
     }
+
+    /* GLOBAL STYLE */
+    .aline-desk {
+        @apply px-12 2xl:px-24
+    }
+
+    /* SITE */
     .site {
         @apply w-full h-full relative
     }
     .nav-wrapper{
-        @apply w-full h-40 py-2 sm:py-4 2xl:py-8 fixed top-0 z-50
+        @apply w-full h-auto py-2 sm:py-4 2xl:py-8 fixed top-0 z-50
         bg-white bg-opacity-30 font-normal tracking-wide
-        backdrop-blur-lg drop-shadow-md rounded-b-sm
+        backdrop-blur-lg drop-shadow-md rounded-b-md
     }
     .nav-mobile{
         @apply w-full h-full
         flex justify-start items-center sm:hidden
     }
     .nav-desk{
-        @apply w-full h-full
+        @apply w-full h-full py-2
         hidden sm:flex justify-start items-center
+    }
+    .nav-logo{
+        @apply w-1/4 h-full
+    }
+    .logo-image{
+        @apply w-auto h-24 2xl:h-32 drop-shadow-md
+    }
+    .nav-social{
+        @apply w-1/4 h-full px-12
+        space-x-4 2xl:space-x-8
+        flex justify-end items-center
+    }
+    .nav-sections{
+        @apply w-full h-full
+        flex justify-center items-center
+        space-x-12 2xl:space-x-24
+    }
+    .nav-sections li a{
+        @apply w-auto h-auto
+        text-lg 2xl:text-2xl tracking-wide font-semibold
+    }
+    .nav-link {
+        @apply text-gray-600
+
+    }
+    .nav-link-houver {
+        @apply text-amber-900
+        underline underline-offset-8 decoration-4 decoration-yellow-500
     }
     .pizzaria{
         @apply w-full h-full
-        flex flex-col justify-start items-center
-        bg-purple-600
+        flex flex-col justify-center items-center
+        bg-fixed bg-center
     }
     .cardapio{
         @apply w-full h-full
         flex flex-col justify-start items-center
         bg-yellow-600
     }
-
+    .historia{
+        @apply w-full h-full
+        flex flex-col justify-start items-center
+        bg-blue-600
+    }
 }

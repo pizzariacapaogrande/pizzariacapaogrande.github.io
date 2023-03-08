@@ -2,7 +2,7 @@ import React from 'react'
 
 const Cardapio = () => {
     return (
-        <section className="cardapio">
+        <section id="cardapio" className="cardapio">
             Cardapio Capão Grande
         </section>
     )
