@@ -1,4 +1,5 @@
 import '@/styles/globals.css'
+import '@/styles/leaf.css'
 import Script from 'next/script'
 
 export default function App({ Component, pageProps }) {
