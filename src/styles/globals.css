@@ -11,7 +11,7 @@
         @apply text-5xl 2xl:text-7xl font-bold tracking-wide
     }
     h2 {
-        @apply text-4xl 2xl:text-5xl font-medium tracking-wide
+        @apply text-3xl 2xl:text-5xl font-medium tracking-wide
     }
     h3 {
         @apply text-xl tracking-wide
@@ -47,11 +47,22 @@
     #toggle-icon-close{
         @apply w-12 h-12 text-gray-700
     }
+    #btn-card{
+        @apply w-6 h-6 text-gray-700
+    }
 
     /* GLOBAL STYLE */
     .aline{
         @apply px-6 sm:px-12 2xl:px-24
         py-2
+    }
+    .decorate-title{
+        @apply underline underline-offset-8
+        decoration-4 decoration-yellow-500
+    }
+    .decorate-title-2{
+        @apply underline underline-offset-8
+        decoration-4 decoration-green-500
     }
     .btn-whatsapp{
         @apply w-auto h-auto px-4 py-2
@@ -71,6 +82,11 @@
     .btn-toggle-close{
         @apply w-auto h-auto p-6
         flex justify-center items-center
+    }
+    .btn-go-top{
+        @apply w-12 h-12 p-2 fixed bottom-2 right-2
+        flex justify-center items-center
+        bg-green-500 rounded-full
     }
     /* SITE */
     .site {
@@ -121,7 +137,7 @@
         underline underline-offset-8 decoration-4 decoration-yellow-500
     }
     .pizzaria{
-        @apply w-full h-full bg-fixed bg-center relative
+        @apply w-full h-full py-12 bg-fixed bg-center relative
     }
     .call-action{
         @apply w-1/2 h-auto absolute top-40 2xl:top-60 left-32 z-30
@@ -143,11 +159,48 @@
     .arvore{
         @apply w-full sm:w-2/3 absolute bottom-0 right-0
     }
+
+    /* CARDAPIO SECTION*/
     .cardapio{
-        @apply w-full h-full
+        @apply w-full h-full px-2 py-12
         flex flex-col justify-start items-center
-        bg-yellow-600
+        bg-gradient-to-t from-yellow-500 via-yellow-200 to-white
     }
+    .card-wrapper{
+        @apply w-full h-auto mt-12
+        flex flex-col justify-center items-center
+    }
+    .cardapio-card{
+        @apply w-full h-full p-2
+        flex flex-col justify-start items-center
+        bg-white bg-opacity-70 backdrop-blur-lg
+        drop-shadow-md rounded-xl
+    }
+    .card-description{
+        @apply w-full h-full mt-4
+        text-justify
+    }
+    .card-description p{
+        @apply w-full h-auto py-2
+    }
+    .cardapio-card aside{
+        @apply w-1/3 h-full
+    }
+    .card-header{
+        @apply w-full h-full ml-2
+        flex justify-start items-start
+    }
+    .cardapio-card-image{
+        @apply w-28 h-28
+    }
+    .topic{
+        @apply w-auto h-auto mr-2
+        capitalize font-medium underline
+        underline-offset-4 decoration-yellow-500 decoration-4
+    }
+
+
+    /* HISTORIA SECTION*/
     .historia{
         @apply w-full h-full
         flex flex-col justify-start items-center
