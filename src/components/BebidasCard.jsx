@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 
-const PizzaCard = ({ title, image, description }) => {
+const BebidasCard = ({ title, image, description }) => {
     const [size, setSize] = useState(4)
 
     function handleOptionChange(event) {
@@ -10,9 +10,9 @@ const PizzaCard = ({ title, image, description }) => {
 
     return (
         <article className="cardapio-card">
-            <h3 className="!w-full text-4xl px-4 py-2 text-center font-medium">Pizzas</h3>
+            <h3 className="!w-full text-4xl px-4 py-2 text-center font-medium">Bebidas</h3>
             <div className="card-header">
-                <Image className="cardapio-card-image" alt="logo" src={image} width={1024} height={1024} />
+                <Image className="cardapio-card-image" alt="bebidas" src={image} width={1024} height={1024} />
                 <div className="w-full h-full ml-4">
                     <h3 className="capitalize py-2">{title}</h3>
                     <div>
@@ -38,4 +38,4 @@ const PizzaCard = ({ title, image, description }) => {
     )
 }
 
-export default PizzaCard
+export default BebidasCard

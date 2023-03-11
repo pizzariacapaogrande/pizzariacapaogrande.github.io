@@ -88,6 +88,13 @@
         flex justify-center items-center
         bg-green-500 rounded-full
     }
+    .btn-cardapio{
+        @apply w-1/2 h-12 mt-2
+        bg-white bg-opacity-70
+        backdrop-blur-xl drop-shadow-md rounded-md
+        active:bg-green-400
+    }
+
     /* SITE */
     .site {
         @apply w-full h-full relative
@@ -162,22 +169,24 @@
 
     /* CARDAPIO SECTION*/
     .cardapio{
-        @apply w-full h-full px-2 py-12
-        flex flex-col justify-start items-center
-        bg-gradient-to-t from-yellow-500 via-yellow-200 to-white
+        @apply w-full h-auto px-2 sm:px-12 py-12 sm:space-x-12
+        flex flex-col sm:flex-row justify-start items-center
+
+        bg-yellow-400
     }
     .card-wrapper{
-        @apply w-full h-auto mt-12
+        @apply w-full sm:w-1/3 h-full mt-6
         flex flex-col justify-center items-center
     }
     .cardapio-card{
-        @apply w-full h-full p-2
+        @apply w-full h-[32rem] p-2
         flex flex-col justify-start items-center
         bg-white bg-opacity-70 backdrop-blur-lg
         drop-shadow-md rounded-xl
     }
     .card-description{
-        @apply w-full h-full mt-4
+        @apply w-full h-full py-2 px-4
+        flex flex-col justify-center items-start
         text-justify
     }
     .card-description p{
@@ -187,11 +196,15 @@
         @apply w-1/3 h-full
     }
     .card-header{
-        @apply w-full h-full ml-2
-        flex justify-start items-start
+        @apply w-full h-auto py-1
+        flex justify-start items-center
     }
     .cardapio-card-image{
-        @apply w-28 h-28
+        @apply w-28 h-28 p-2
+    }
+    .cardapio-btn-wrapper{
+        @apply w-full h-full space-x-1
+        flex justify-center items-center
     }
     .topic{
         @apply w-auto h-auto mr-2
