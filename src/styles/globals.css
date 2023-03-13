@@ -1,20 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Merienda:wght@500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
 @layer base {
+
+    :root {
+
+        /* --color-title: #5f4e48; */
+        --color-title: #493c37;
+
+    }
+
     html, body{
-        @apply h-full w-full
+        @apply h-full w-full font-open
     }
     h1 {
-        @apply text-5xl 2xl:text-7xl font-bold tracking-wide
+        @apply text-5xl 2xl:text-7xl font-lora font-bold tracking-wide text-skin-title
     }
     h2 {
-        @apply text-3xl 2xl:text-5xl font-medium tracking-wide
+        @apply text-3xl 2xl:text-5xl font-lora font-medium tracking-wide text-skin-title
     }
     h3 {
-        @apply text-xl tracking-wide
+        @apply text-xl font-lora font-medium tracking-wide text-skin-title
     }
     p {
         @apply text-base font-light sm:text-lg 2xl:text-2xl tracking-wide
@@ -150,8 +160,14 @@
         @apply w-1/2 h-auto absolute top-40 2xl:top-60 left-32 z-30
         hidden md:flex flex-col justify-center items-start
     }
+    .call-contato{
+        @apply w-auto h-auto absolute hidden
+        bottom-12 2xl:bottom-24 left-6 2xl:left-12
+        md:flex flex-col justify-center items-start
+    }
     .call-image{
-        @apply w-auto h-72 2xl:h-96 hidden md:flex
+        @apply w-auto h-72 2xl:h-96 absolute hidden md:flex
+        bottom-[18rem] 2xl:bottom-[28rem] left-12
     }
     .call-image-mobile{
         @apply w-auto h-56 z-30
@@ -171,21 +187,74 @@
     .cardapio{
         @apply w-full h-auto px-2 sm:px-12 py-12 sm:space-x-12
         flex flex-col sm:flex-row justify-start items-center
-
         bg-yellow-400
     }
-    .card-wrapper{
-        @apply w-full sm:w-1/3 h-full mt-6
-        flex flex-col justify-center items-center
+    .cardapio h2{
+        @apply w-full sm:w-1/2 mb-12 text-center
+        !text-4xl font-bold decorate-title-2
     }
     .cardapio-card{
-        @apply w-full h-[32rem] p-2
-        flex flex-col justify-start items-center
-        bg-white bg-opacity-70 backdrop-blur-lg
-        drop-shadow-md rounded-xl
+        @apply w-full h-full
     }
-    .card-description{
+    .cardapio-form{
+        @apply w-full h-full
+    }
+    .cardapio-select{
+        @apply w-full h-full
+        flex justify-center items-center
+    }
+    .cardapio-select span{
+        @apply w-full h-full
+        flex justify-center items-center
+    }
+    .cardapio-select select{
+        @apply w-1/2 h-full
+    }
+    .select-tipo{
+        @apply w-full h-full
+    }
+    .pizza-produto{
         @apply w-full h-full py-2 px-4
+    }
+    .pizza-header{
+        @apply w-full h-full mt-8
+        flex justify-center items-center
+    }
+    .pizza-header h3{
+        @apply w-full h-full ml-6
+        text-left text-4xl font-merienda
+    }
+    .pizza-title-image{
+        @apply w-auto h-28
+    }
+    .pizza-body{
+        @apply w-full h-auto
+        flex flex-col justify-start items-center
+    }
+    .pizza-info{
+        @apply w-full h-auto py-12
+        flex flex-col justify-start items-center
+    }
+    .pizza-info-title{
+        @apply w-full h-full mb-4
+        text-2xl font-lora border-b-2 border-skin-title
+    }
+    .pizza-info div{
+        @apply w-full h-full
+        flex justify-start items-center
+    }
+    .pizza-info div p{
+        @apply w-1/2 h-full
+        font-medium capitalize
+    }
+    .pizza-info div span{
+        @apply w-1/2 h-full text-end
+    }
+
+
+
+    .card-description{
+        @apply w-full h-full py-2
         flex flex-col justify-center items-start
         text-justify
     }

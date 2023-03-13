@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 
-const PizzaCard = ({ title, image, description }) => {
+const CardapioCard = ({ title, image, description }) => {
     const [size, setSize] = useState(4)
 
     function handleOptionChange(event) {
@@ -38,4 +38,4 @@ const PizzaCard = ({ title, image, description }) => {
     )
 }
 
-export default PizzaCard
+export default CardapioCard
