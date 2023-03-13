@@ -244,8 +244,7 @@
         flex justify-start items-center
     }
     .pizza-info div p{
-        @apply w-1/2 h-full
-        font-medium capitalize
+        @apply w-1/2 h-full font-medium capitalize
     }
     .pizza-info div span{
         @apply w-1/2 h-full text-end
@@ -264,12 +263,8 @@
     .cardapio-card aside{
         @apply w-1/3 h-full
     }
-    .card-header{
-        @apply w-full h-auto py-1
-        flex justify-start items-center
-    }
     .cardapio-card-image{
-        @apply w-28 h-28 p-2
+        @apply w-28 h-28 p-2 absolute top-0 right-0
     }
     .cardapio-btn-wrapper{
         @apply w-full h-full space-x-1

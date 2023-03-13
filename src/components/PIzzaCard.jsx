@@ -8,12 +8,10 @@ const PIzzaCard = ({ title, image, description }) => {
         setSize(event.target.value);
     }
     return (
-        <div>
-            <div className="card-header">
-                <h3 className="capitalize py-2">{title}</h3>
-                <Image className="cardapio-card-image" alt="logo" src={image} width={1024} height={1024} />
-            </div>
+        <div className="relative">
+            <h3 className="before:content-['*'] before:mr-4 capitalize py-2 list-disc">{title}</h3>
             <div className="card-description">
+                <Image className="cardapio-card-image" alt="logo" src={image} width={1024} height={1024} />
                 {
                     description?.map((p, i) => (
                         <p className="!text-lg" key={i}>{p.p}</p>
