@@ -5,6 +5,7 @@ import Cardapio from "@/components/Cardapio"
 import Historia from "@/components/Historia"
 import { MenuContext } from "@/contexts/MenuContext"
 import MenuToggle from "@/components/MenuToggle"
+import Footer from "@/components/Footer"
 
 export default function Home() {
     const { toggle, setToggle } = useContext(MenuContext)
@@ -32,6 +33,7 @@ export default function Home() {
             <Pizzaria />
             <Cardapio />
             <Historia />
+            <Footer />
             {toggle === true ? <MenuToggle /> : null}
             {
                 scroll > 0
