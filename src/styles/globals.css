@@ -186,8 +186,8 @@
     /* CARDAPIO SECTION*/
     .cardapio{
         @apply w-full h-auto px-2 sm:px-12 py-12 sm:space-x-12
-        flex flex-col sm:flex-row justify-start items-center
-        bg-yellow-400
+        flex flex-col justify-start items-center
+        bg-yellow-300
     }
     .cardapio h2{
         @apply w-full sm:w-1/2 mb-12 text-center
@@ -218,14 +218,14 @@
     }
     .pizza-header{
         @apply w-full h-full mt-8
-        flex justify-center items-center
+        flex justify-center items-end
     }
     .pizza-header h3{
         @apply w-full h-full ml-6
-        text-left text-4xl font-merienda
+        text-left text-5xl font-merienda
     }
     .pizza-title-image{
-        @apply w-auto h-28
+        @apply w-auto h-24
     }
     .pizza-body{
         @apply w-full h-auto
@@ -249,36 +249,29 @@
     .pizza-info div span{
         @apply w-1/2 h-full text-end
     }
+    .pizza-card{
+        @apply w-full h-auto relative mt-10
+        flex flex-col sm:flex-row justify-center sm:justify-start items-center
+    }
     .pizza-card-header{
-        @apply w-full h-auto
+        @apply w-full h-auto p-2
         flex justify-center items-center
+        bg-yellow-400 rounded-full
+    }
+    .pizza-card-header h3{
+        @apply w-full h-full ml-6 capitalize
+        text-left sm:text-center
     }
     .pizza-card-image{
-        @apply w-20 h-20 p-2
-        border border-gray-400 rounded-full
+        @apply w-20 sm:w-24 2xl:w-36 h-20 sm:h-24 2xl:h-36
     }
     .pizza-card-description{
-        @apply w-full h-full py-2
-        flex flex-col justify-center items-start
-        text-justify
+        @apply w-full h-full px-4 py-2 mt-6
+        flex flex-col justify-center items-start text-justify
     }
     .pizza-card-description > p{
         @apply w-full h-auto py-2
         text-gray-700
-    }
-
-
-    .cardapio-card aside{
-        @apply w-1/3 h-full
-    }
-    .cardapio-btn-wrapper{
-        @apply w-full h-full space-x-1
-        flex justify-center items-center
-    }
-    .topic{
-        @apply w-auto h-auto mr-2
-        capitalize font-medium underline
-        underline-offset-4 decoration-yellow-500 decoration-4
     }
 
 

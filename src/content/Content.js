@@ -23,10 +23,10 @@ export const pizzas = [
 ]
 
 export const pizzasPreco = [
-    { tamanho: "pequena", preco: "R$ 30.00", },
-    { tamanho: "media", preco: "R$ 45.00", },
-    { tamanho: "grande", preco: "R$ 60.00", },
-    { tamanho: "familia", preco: "R$ 75.00", },
+    { tamanho: "pequena (1pessoa)", preco: "R$ 30.00", },
+    { tamanho: "media (2 pessoas)", preco: "R$ 45.00", },
+    { tamanho: "grande (3 pessoas)", preco: "R$ 60.00", },
+    { tamanho: "familia (4 pessoas)", preco: "R$ 75.00", },
 ]
 
 export const bebidas = [

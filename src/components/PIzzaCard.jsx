@@ -8,10 +8,10 @@ const PIzzaCard = ({ title, image, description }) => {
         setSize(event.target.value);
     }
     return (
-        <div className="relative mt-6">
+        <div className="pizza-card">
             <div className="pizza-card-header">
                 <Image className="pizza-card-image" alt="logo" src={image} width={1024} height={1024} />
-                <h3 className="ml-4 capitalize !font-semibold">{title}</h3>
+                <h3 className="!font-semibold !text-3xl md:!text-4xl">{title}</h3>
             </div>
             <div className="pizza-card-description">
                 {
