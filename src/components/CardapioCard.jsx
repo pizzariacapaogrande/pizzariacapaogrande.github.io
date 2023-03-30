@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import PizzaProduto from './PizzaProduto'
+import PizzaProduto from './PizzaProduto/PizzaProduto'
+import BebidasProduto from './BebidasProduto/BebidasProduto'
 
 const CardapioCard = () => {
     const [tipo, setTipo] = useState(1)
@@ -19,6 +20,7 @@ const CardapioCard = () => {
                 </div>
             </article>
             {tipo == 1 ? <PizzaProduto /> : null}
+            {tipo == 2 ? <BebidasProduto /> : null}
         </section>
     )
 }

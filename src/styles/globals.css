@@ -187,7 +187,7 @@
     .cardapio{
         @apply w-full h-auto px-2 sm:px-12 py-12 sm:space-x-12
         flex flex-col justify-start items-center
-        bg-yellow-300
+        bg-yellow-100
     }
     .cardapio h2{
         @apply w-full sm:w-1/2 mb-12 text-center
@@ -214,7 +214,7 @@
         @apply w-full h-full
     }
     .pizza-produto{
-        @apply w-full h-full py-2 px-4
+        @apply w-full h-full py-12 px-4
     }
     .pizza-header{
         @apply w-full h-full mt-8
@@ -256,7 +256,6 @@
     .pizza-card-header{
         @apply w-full h-auto p-2
         flex justify-center items-center
-        bg-yellow-400 rounded-full
     }
     .pizza-card-header h3{
         @apply w-full h-full ml-6 capitalize
@@ -272,6 +271,17 @@
     .pizza-card-description > p{
         @apply w-full h-auto py-2
         text-gray-700
+    }
+    .bebidas-card{
+        @apply w-full h-auto
+        flex flex-col justify-start items-start
+    }
+    .bebidas-card div{
+        @apply w-full h-auto
+        flex justify-start items-start
+    }
+    .bebidas-card div p{
+        @apply w-full h-auto
     }
 
 

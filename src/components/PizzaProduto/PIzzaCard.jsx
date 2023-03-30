@@ -1,12 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Image from 'next/image'
 
 const PIzzaCard = ({ title, image, description }) => {
-    const [size, setSize] = useState(4)
-
-    function handleOptionChange(event) {
-        setSize(event.target.value);
-    }
     return (
         <div className="pizza-card">
             <div className="pizza-card-header">

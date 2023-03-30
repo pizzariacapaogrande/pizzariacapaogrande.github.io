@@ -4,8 +4,6 @@ import PIzzaCard from './PIzzaCard';
 import { pizzasPreco, pizzas } from '@/content/Content'
 
 const PizzaProduto = () => {
-
-
     return (
         <article className="pizza-produto">
             <div className="pizza-header">
