@@ -32,17 +32,89 @@ export const pizzasPreco = [
 export const bebidas = [
     {
         id: 1,
-        title: "Suco pequeno (jarra 5000 ml)",
-        preco: 0,
+        title: "Suco pequeno",
+        subtitle: "(jarra 500ml)",
+        preco: "R$ 10,00"
     },
     {
         id: 2,
-        title: "Suco médio (jarra 1,0 l)",
-        preco: 0,
+        title: "Suco médio ",
+        subtitle: "(jarra 1,0l)",
+        preco: "R$ 10,00"
     },
     {
         id: 3,
-        title: "Suco grande (jarra 1,5 l)",
-        preco: 0,
+        title: "Suco grande",
+        subtitle: "(jarra 1,5l)",
+        preco: "R$ 10,00"
+    },
+    {
+        id: 4,
+        title: "Cerveja Bohemia",
+        subtitle: "",
+        preco: "R$ 10,00"
+    },
+    {
+        id: 5,
+        title: "Cerveja Heineken",
+        subtitle: "",
+        preco: "R$ 10,00"
+    },
+    {
+        id: 6,
+        title: "Cerveja Heizenbahn",
+        subtitle: "",
+        preco: "R$ 10,00"
+    },
+    {
+        id: 7,
+        title: "Cachaça da casa",
+        subtitle: "",
+        preco: "R$ 10,00"
+    },
+]
+
+export const vinhos = [
+    {
+        id: 1,
+        title: "Suco pequeno",
+        subtitle: ["Cabernet Sauvignon", "Syah"],
+        preco: "R$ 10,00"
+    },
+    {
+        id: 2,
+        title: "Suco médio ",
+        subtitle: ["Cabernet Sauvignon", "Syah"],
+        preco: "R$ 10,00"
+    },
+    {
+        id: 3,
+        title: "Suco grande",
+        subtitle: ["Cabernet Sauvignon", "Syah"],
+        preco: "R$ 10,00"
+    },
+    {
+        id: 4,
+        title: "Cerveja Bohemia",
+        subtitle: ["Cabernet Sauvignon", "Syah"],
+        preco: "R$ 10,00"
+    },
+    {
+        id: 5,
+        title: "Cerveja Heineken",
+        subtitle: ["Cabernet Sauvignon", "Syah"],
+        preco: "R$ 10,00"
+    },
+    {
+        id: 6,
+        title: "Cerveja Heizenbahn",
+        subtitle: ["Cabernet Sauvignon", "Syah"],
+        preco: "R$ 10,00"
+    },
+    {
+        id: 7,
+        title: "Cachaça da casa",
+        subtitle: ["Cabernet Sauvignon", "Syah"],
+        preco: "R$ 10,00"
     },
 ]
