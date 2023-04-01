@@ -30,7 +30,7 @@ const Historia = () => {
                 afirmando nosso compromisso com a natureza.
             </p>
             <p className="!font-semibold">Saboreiem com prazer !</p>
-            <Image className="w-auto h-48 absolute bottom-2 right-2 z-20" alt="arvore" src="/img/arvore_historia.png" width={1024} height={1024} />
+            <Image className="w-auto h-48 absolute bottom-2 right-2" alt="arvore" src="/img/arvore_historia.png" width={1024} height={1024} />
         </section>
     )
 }

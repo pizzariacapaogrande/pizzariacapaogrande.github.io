@@ -18,7 +18,7 @@ const BebidasProduto = () => {
                     subtitle={bebida.subtitle}
                 />
             ))}
-            <div className=" py-6 text-sm font-light text-gray-500">
+            <div className="py-6 text-sm font-light text-gray-500">
                 <span className="font-semibold uppercase text-sm">obs.: </span>
                 Os sucos são adoçados com mel.<br />Consulte nosso serviço para saber os sabores.
             </div>

@@ -123,6 +123,11 @@
         bg-black bg-opacity-30 font-normal tracking-wide
         backdrop-blur-lg
     }
+    .toggle-links{
+        @apply w-full h-full px-6
+        flex flex-col justify-start items-start
+        space-y-4
+    }
     .nav-desk{
         @apply w-full h-full
         hidden sm:flex justify-start items-center
@@ -150,6 +155,13 @@
         @apply text-gray-600
     }
     .nav-link-houver {
+        @apply text-amber-900
+        underline underline-offset-8 decoration-4 decoration-yellow-500
+    }
+    .toggle-link {
+        @apply text-gray-600
+    }
+    .toggle-link-houver {
         @apply text-amber-900
         underline underline-offset-8 decoration-4 decoration-yellow-500
     }
@@ -196,19 +208,13 @@
     .cardapio-card{
         @apply w-full h-full
     }
-    .cardapio-form{
-        @apply w-full h-full
-    }
     .cardapio-select{
         @apply w-full h-full
         flex justify-center items-center
     }
-    .cardapio-select span{
-        @apply w-full h-full
-        flex justify-center items-center
-    }
     .cardapio-select select{
-        @apply w-1/2 h-full
+        @apply w-1/2 h-full p-2
+        bg-white
     }
     .select-tipo{
         @apply w-full h-full
@@ -289,7 +295,6 @@
     .historia{
         @apply w-full h-full relative
         flex flex-col justify-start items-center
-        bg-blue-600
     }
     .historia h2{
         @apply w-full h-auto sm:w-1/2 py-12 text-center
@@ -300,11 +305,9 @@
         @apply w-full h-auto px-6 py-4
         font-light text-justify text-gray-600
     }
-
-    /* HISTORIA SECTION*/
     .footer{
-        @apply w-full h-auto px-4 py-6 text-white
+        @apply w-full h-16 px-4 py-6 text-white
         flex justify-start items-center
-        bg-[#493c37] text-sm font
+        bg-[#493c37] text-sm
     }
 }
