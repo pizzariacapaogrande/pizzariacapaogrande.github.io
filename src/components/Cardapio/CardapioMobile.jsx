@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import PizzaProduto from './PizzaProduto/PizzaProduto'
-import BebidasProduto from './BebidasProduto/BebidasProduto'
-import VinhoProduto from './VinhoProduto/VinhoProduto'
+import BebidasProduto from '../BebidasProduto/BebidasProduto'
+import VinhoProduto from '../VinhoProduto/VinhoProduto'
+import PizzaProduto from '../PizzaProduto/PizzaProduto'
 
-const CardapioCard = () => {
+const CardapioMobile = () => {
     const [tipo, setTipo] = useState(1)
 
     function handleOptionChange(event) {
@@ -25,4 +25,4 @@ const CardapioCard = () => {
     )
 }
 
-export default CardapioCard
+export default CardapioMobile

@@ -1,7 +1,7 @@
 import react, { useContext, useState, useEffect } from "react"
 import Navbar from "@/components/Navbar"
 import Pizzaria from "@/components/Pizzaria"
-import Cardapio from "@/components/Cardapio"
+import Cardapio from "@/components/Cardapio/Cardapio"
 import Historia from "@/components/Historia"
 import { MenuContext } from "@/contexts/MenuContext"
 import MenuToggle from "@/components/MenuToggle"
