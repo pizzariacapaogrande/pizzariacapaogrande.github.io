@@ -197,7 +197,7 @@
 
     /* CARDAPIO SECTION*/
     .cardapio{
-        @apply w-full h-auto px-2 sm:px-12 py-12 sm:space-x-12
+        @apply w-full h-auto px-2 sm:px-12 py-12
         flex flex-col justify-start items-center
         bg-yellow-50
     }
@@ -218,11 +218,20 @@
     }
     .cardapio-desk{
         @apply w-full h-auto
-        hidden lg:flex justify-start items-start
+        hidden xl:flex justify-start items-start
     }
     .desk-article{
-        @apply w-full h-auto px-10
+        @apply w-full h-auto px-4 2xl:px-8
         flex flex-col justify-start items-center
+    }
+    .desk-header{
+        @apply w-full h-40
+        flex justify-start items-center
+    }
+    .desk-header h3{
+        @apply w-full h-full self-center
+        flex justify-center items-center
+        text-4xl 2xl:text-5xl text-center
     }
     .desk-pizza-card{
         @apply w-full h-auto
@@ -282,7 +291,7 @@
     }
     .pizza-card{
         @apply w-full h-auto relative mt-10
-        flex flex-col sm:flex-row justify-center sm:justify-start items-center
+        flex flex-col justify-center items-center
     }
     .pizza-card-header{
         @apply w-full h-auto p-2
