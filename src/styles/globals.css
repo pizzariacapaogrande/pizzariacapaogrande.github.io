@@ -345,4 +345,87 @@
         flex justify-start items-center
         bg-[#493c37] text-sm
     }
+
+    .notas-wraper {
+        @apply w-full h-full bg-slate-300
+        flex flex-col justify-center items-center
+    }
+
+    .notas {
+        @apply w-full sm:w-2/3 h-full
+        flex flex-col justify-center items-center
+    }
+
+    .notas article {
+        @apply w-full px-4 sm:px-0 sm:w-2/3 h-auto py-12
+        flex-col sm:flex justify-center sm:justify-start items-center
+        space-x-6
+    }
+
+    .notas-article-form {
+        @apply w-full sm:w-1/2 h-full
+        flex flex-col justify-center items-center
+    }
+
+    .notas-article-form h3 {
+        @apply w-full h-full mb-12
+        text-3xl  font-semibold
+    }
+
+    .notas-form {
+        @apply w-full h-full
+        flex flex-col justify-center items-center
+    }
+
+    .notas-input-wraper {
+        @apply w-full h-auto mt-12 sm:mt-0
+        flex sm:flex sm:justify-start items-center
+        space-y-4 sm:space-x-2
+    }
+
+    .notas-input-wraper label {
+        @apply w-full sm:w-1/2 text-2xl
+     font-normal
+    }
+
+    .notas-input {
+        @apply w-full py-2 px-2
+        focus:outline-none rounded-md
+        text-black text-2xl
+    }
+
+    .notas-button {
+        @apply w-full flex mt-12
+        justify-start sm:justify-end space-x-2 sm:space-x-6
+    }
+
+    .results-wraper {
+        @apply w-full h-full flex justify-start items-start
+        space-y-4 sm:space-x-6
+    }
+
+    .results-wraper h3 {
+        @apply w-auto sm:w-1/2 h-full
+        text-2xl font-semibold
+    }
+
+    .results {
+        @apply w-full h-full flex p-2
+        justify-center items-center sm:space-x-6
+        border border-gray-700
+    }
+
+    .results span {
+        @apply w-full
+        text-lg
+    }
+
+    .text-valor {
+        @apply text-red-500
+    }
+
+    .nav-mobile {
+        @apply w-full h-full px-6 py-4
+        flex lg:hidden justify-start items-center
+    }
 }
